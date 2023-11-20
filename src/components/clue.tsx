@@ -28,7 +28,7 @@ export async function Clue(props: Props) {
   return (
     <Dialog>
       <DialogTrigger className={cn('p-12 w-full', dd && 'bg-daily-double bg-cover bg-center')} disabled={!data.clue}>
-        <p className={cn(dd && 'bg-background/90 text-accent py-2 px-3 rounded-lg shadow')}>{value}</p>
+        <p className={cn(dd && 'bg-background/90 rounded-lg shadow', 'text-accent py-2 px-3')}>{value}</p>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
